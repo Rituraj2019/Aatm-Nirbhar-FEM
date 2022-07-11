@@ -19,6 +19,8 @@ Project of Summer Internship'22 | CMLab, IIT Roorkee
 
 **modules/ui_main.py**: Qt designer exports .ui file which contains xml code. To make xml code editable and accessible we convert that to .py file using **pyside6-uic input.ui -o output.py**. 
 
+**.idea** and **_pycache_**: These are auto created files during making python project directory for our project in pycharm
+
 ## Process to convert .py to .exe
 Step1: In CMD: **pip install pyinstaller**
 
