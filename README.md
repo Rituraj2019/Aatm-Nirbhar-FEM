@@ -22,7 +22,7 @@ Project of Summer Internship'22 | CMLab, IIT Roorkee
 ## Process to convert .py to .exe
 Step1: In CMD: **pip install pyinstaller**
 
-Step2: In project directory(make sure all the necessary files are in this directory): **pyinstaller --onefile -w filename.py** . This will create some files in project directory
+Step2: In project directory(make sure all the necessary files are in this directory): **pyinstaller --onefile -w filename.py** ,(filename.py=main.py in our case). This will create some files in project directory
 
 Step3: Open dist file to get executable(.exe) file for use
 
