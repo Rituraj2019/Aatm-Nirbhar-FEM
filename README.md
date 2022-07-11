@@ -32,8 +32,7 @@ To modify,
 
 Step1: Open cmd at the .ui file location. (UI file will be created inside the project folder)
 
-Step2: Now inside cmd use: **pyuic6 -o output.py -x input.ui**    
-       Here, pyuic6 is because we are using pyqt6. -o is followed by python file we want to get output as. And -x is followed by input file which is in .ui file.
+Step2: Now inside cmd use: **pyside6-uic input.ui -o output.py*
        
 Step3: Open project file, .py file will be available as (output.py)
 
