@@ -5,9 +5,9 @@ Project of Summer Internship'22 | CMLab, IIT Roorkee
 
 **modules**: These are different python modules which are imported in main.py for working of GUI
 
-**main.ui**: Qt designer file. This is made inside Qt creator/designer. The exported file generates .ui file which is then converted to .py file. ui_main.py is the python file converted from this .ui file.
+**main.ui**: Qt designer file. This is made inside Qt creator/designer. The exported file generates .ui file which is then converted to .py file. @ui_main.py is the python file converted from this .ui file.
 
-**themes**: This file contains different themes for out GUI
+**themes**: This file contains different themes for our GUI
 
 **images**: This file contains different images used in making of our GUI
 
@@ -17,7 +17,7 @@ Project of Summer Internship'22 | CMLab, IIT Roorkee
 
 **modules/ui_functions.py**: Functions related to GUI
 
-**modules/ui_main.py**: Qt designer exports .ui file which contains xml code. To make xml code editable we convert that to .py file using **pyuic6 -o output.py -x input.ui**   Here, pyuic6 is because we are using pyqt6. -o is followed by python file we want to get output as. And -x is followed by input file which is in .ui file.
+**modules/ui_main.py**: Qt designer exports .ui file which contains xml code. To make xml code editable and accessible we convert that to .py file using **pyside6-uic input.ui -o output.py**. 
 
 ## Process to convert .py to .exe
 Step1: In CMD: **pip install pyinstaller**
