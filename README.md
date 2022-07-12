@@ -17,6 +17,8 @@ Project of Summer Internship'22 | CMLab, IIT Roorkee
 
 **modules/ui_functions.py**: Functions related to GUI
 
+**modules/app_functions.py**: Some additional function to manually change style of some widgets. qss unfortunately suffers inheritance problem where they end up inheriting styles from their parents. Using this funtion we have created hacks for these functions of selecting menu buttons (in left side of UI) and also functions related to buttons present in right of UI is added here.
+
 **modules/ui_main.py**: Qt designer exports .ui file which contains xml code. To make xml code editable and accessible we convert that to .py file using **pyside6-uic input.ui -o output.py**. 
 
 **.idea** and **pycache**: These are auto created files during making python project directory for our project in pycharm. These files are not necessary in making of our project
