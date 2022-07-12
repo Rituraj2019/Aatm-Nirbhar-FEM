@@ -21,6 +21,8 @@ Project of Summer Internship'22 | CMLab, IIT Roorkee
 
 **.idea** and **pycache**: These are auto created files during making python project directory for our project in pycharm. These files are not necessary in making of our project
 
+**resources.qrc**: Resources used for Qt designer. Add here using Qt designer
+
 ## Process to convert .py to .exe
 Step1: In CMD: **pip install pyinstaller**
 
