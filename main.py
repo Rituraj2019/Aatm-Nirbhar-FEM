@@ -67,6 +67,8 @@ class MainWindow(QMainWindow):
         # ///////////////////////////////////////////////////////////////
 
         # LEFT MENUS
+        #add here if needed any other buttons in left menu
+        #added buttons are then configured below in buttonClick function
         widgets.btn_home.clicked.connect(self.buttonClick)
         widgets.btn_widgets.clicked.connect(self.buttonClick)
         widgets.btn_new.clicked.connect(self.buttonClick)
@@ -89,8 +91,8 @@ class MainWindow(QMainWindow):
 
         # SET CUSTOM THEME
         # ///////////////////////////////////////////////////////////////
-        useCustomTheme = False
-        themeFile = "themes\py_dracula_light.qss"
+        useCustomTheme = False #change it to true to get the theme loaded in next line
+        themeFile = "themes\py_dracula_light.qss" #this will load a qss file
 
         # SET THEME AND HACKS
         if useCustomTheme:
@@ -98,6 +100,8 @@ class MainWindow(QMainWindow):
             UIFunctions.theme(self, themeFile, True)
 
             # SET HACKS
+            #here we added some additional function to manually change style of
+            #some widgets.
             AppFunctions.setThemeHack(self)
 
         # SET HOME PAGE AND SELECT MENU
@@ -127,7 +131,7 @@ class MainWindow(QMainWindow):
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
 
         # SHOW NEW PAGE
-        if btnName == "new":
+        if btnName == "btn_new":
             widgets.stackedWidget.setCurrentWidget(widgets.new_page) # SET PAGE
             UIFunctions.resetStyle(self, btnName) # RESET ANOTHERS BUTTONS SELECTED
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet())) # SELECT MENU

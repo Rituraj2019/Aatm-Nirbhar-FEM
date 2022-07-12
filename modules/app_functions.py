@@ -20,6 +20,10 @@ from main import *
 
 # WITH ACCESS TO MAIN WINDOW WIDGETS
 # ///////////////////////////////////////////////////////////////
+#here we added some additional function to manually change style of some widgets.
+#qss unfortunately suffers inheritance problem where they end up inheriting styles from their parents.
+#using this funtion we have created hacks for these
+#functions of selecting menu buttons and also functions related to buttons in right of UI is added here.
 class AppFunctions(MainWindow):
     def setThemeHack(self):
         Settings.BTN_LEFT_BOX_COLOR = "background-color: #495474;"
