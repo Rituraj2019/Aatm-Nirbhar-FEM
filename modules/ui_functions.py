@@ -16,6 +16,8 @@
 
 # MAIN FILE
 # ///////////////////////////////////////////////////////////////
+#this python file is especially made for the functions related to UI.
+#this file has functions such as maximizing, restoring,hiding side boxes,expanding etc.
 from main import *
 
 # GLOBALS

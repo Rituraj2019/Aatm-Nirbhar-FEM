@@ -39,29 +39,29 @@ class MainWindow(QMainWindow):
         global widgets
         widgets = self.ui
 
-        # USE CUSTOM TITLE BAR | USE AS "False" FOR MAC OR LINUX
+        # USE CUSTOM TITLE BAR | USE AS "False" FOR standard system title bar of MAC OR LINUX or Windows.
         # ///////////////////////////////////////////////////////////////
         Settings.ENABLE_CUSTOM_TITLE_BAR = True
-
         # APP NAME
         # ///////////////////////////////////////////////////////////////
-        title = "PyDracula - Modern GUI"
-        description = "PyDracula APP - Theme with colors based on Dracula for Python."
+        title = "PyDracula-Modern GUI" #displayed at the top left of the application if title bar is disabled above
+        description = "PyDracula APP - Theme with colors based on Dracula for Python." #displayed at the top left of application
         # APPLY TEXTS
         self.setWindowTitle(title)
         widgets.titleRightInfo.setText(description)
 
         # TOGGLE MENU
         # ///////////////////////////////////////////////////////////////
-        widgets.toggleButton.clicked.connect(lambda: UIFunctions.toggleMenu(self, True))
+        widgets.toggleButton.clicked.connect(lambda: UIFunctions.toggleMenu(self, True)) #make it false to disable left menu bar
 
         # SET UI DEFINITIONS
+        #to configure all the functions of the interface
         # ///////////////////////////////////////////////////////////////
-        UIFunctions.uiDefinitions(self)
+        UIFunctions.uiDefinitions(self) #class defined in ui_function.py file
 
         # QTableWidget PARAMETERS
         # ///////////////////////////////////////////////////////////////
-        widgets.tableWidget.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        widgets.tableWidget.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch) #to set Qtable widget responsive
 
         # BUTTONS CLICK
         # ///////////////////////////////////////////////////////////////
@@ -127,7 +127,7 @@ class MainWindow(QMainWindow):
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
 
         # SHOW NEW PAGE
-        if btnName == "btn_new":
+        if btnName == "new":
             widgets.stackedWidget.setCurrentWidget(widgets.new_page) # SET PAGE
             UIFunctions.resetStyle(self, btnName) # RESET ANOTHERS BUTTONS SELECTED
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet())) # SELECT MENU
