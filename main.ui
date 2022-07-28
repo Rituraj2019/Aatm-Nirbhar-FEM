@@ -594,6 +594,9 @@ Button */
            <height>16777215</height>
           </size>
          </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
          <property name="frameShape">
           <enum>QFrame::NoFrame</enum>
          </property>
@@ -656,6 +659,9 @@ Button */
                <width>42</width>
                <height>42</height>
               </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-image: url(:/UsedImages/Logos/Images/IITR-logo (Custom) (3).png);</string>
              </property>
              <property name="frameShape">
               <enum>QFrame::NoFrame</enum>
@@ -722,6 +728,9 @@ Button */
           </item>
           <item>
            <widget class="QFrame" name="leftMenuFrame">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
             <property name="frameShape">
              <enum>QFrame::NoFrame</enum>
             </property>
@@ -815,6 +824,9 @@ Button */
              </item>
              <item alignment="Qt::AlignTop">
               <widget class="QFrame" name="topMenu">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
                <property name="frameShape">
                 <enum>QFrame::NoFrame</enum>
                </property>
@@ -838,7 +850,7 @@ Button */
                  <number>0</number>
                 </property>
                 <item>
-                 <widget class="QPushButton" name="btn_home">
+                 <widget class="QPushButton" name="btn_solvertype">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -865,8 +877,13 @@ Button */
                   <property name="layoutDirection">
                    <enum>Qt::LeftToRight</enum>
                   </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
                   <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-home.png);</string>
+                   <string notr="true">background-image: url(:/UsedIcons/Logos/Icons/solver-type (Custom).png);
+
+</string>
                   </property>
                   <property name="text">
                    <string>Home</string>
@@ -874,7 +891,7 @@ Button */
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="btn_widgets">
+                 <widget class="QPushButton" name="btn_initialcondition">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -902,7 +919,8 @@ Button */
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-gamepad.png);</string>
+                   <string notr="true">
+background-image: url(:/UsedIcons/Logos/Icons/initial-condition (Custom).png);</string>
                   </property>
                   <property name="text">
                    <string>Widgets</string>
@@ -910,7 +928,7 @@ Button */
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="btn_new">
+                 <widget class="QPushButton" name="btn_nonlinearsolver">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -938,7 +956,8 @@ Button */
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-file.png);</string>
+                   <string notr="true">
+background-image: url(:/UsedIcons/Logos/Icons/non-linear-solver-setting (Custom).png);</string>
                   </property>
                   <property name="text">
                    <string>New</string>
@@ -946,7 +965,7 @@ Button */
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="btn_save">
+                 <widget class="QPushButton" name="btn_timedependent">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -974,7 +993,8 @@ Button */
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-save.png)</string>
+                   <string notr="true">
+background-image: url(:/UsedIcons/Logos/Icons/time-dependent settings (Custom).png);</string>
                   </property>
                   <property name="text">
                    <string>Save</string>
@@ -982,7 +1002,7 @@ Button */
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="btn_exit">
+                 <widget class="QPushButton" name="btn_eigenvalue">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -1010,7 +1030,9 @@ Button */
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-x.png);</string>
+                   <string notr="true">
+background-image: url(:/UsedIcons/Logos/Icons/icons8-lambda-48 (Custom).png);
+</string>
                   </property>
                   <property name="text">
                    <string>Exit</string>
@@ -1583,7 +1605,7 @@ p, li { white-space: pre-wrap; }
                    </font>
                   </property>
                   <property name="text">
-                   <string>PyDracula APP - Theme with colors based on Dracula for Python.</string>
+                   <string>CMLAB IIT Roorkee - Solver Settings</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1859,11 +1881,12 @@ p, li { white-space: pre-wrap; }
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>2</number>
+                      <number>0</number>
                      </property>
                      <widget class="QWidget" name="home">
                       <property name="styleSheet">
-                       <string notr="true">background-image: url(:/images/images/images/PyDracula_vertical.png);
+                       <string notr="true">
+background-image: url(:/UsedImages/Logos/Images/IITR-logo (Custom) (2).png);
 background-position: center;
 background-repeat: no-repeat;</string>
                       </property>
@@ -2163,8 +2186,8 @@ background-repeat: no-repeat;</string>
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>218</width>
-                                 <height>218</height>
+                                 <width>325</width>
+                                 <height>222</height>
                                 </rect>
                                </property>
                                <property name="styleSheet">
