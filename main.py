@@ -91,7 +91,7 @@ class MainWindow(QMainWindow):
 
         # SET CUSTOM THEME
         # ///////////////////////////////////////////////////////////////
-        useCustomTheme = False #change it to true to get the theme loaded in next line
+        useCustomTheme = True #change it to true to get the theme loaded in next line
         themeFile = "themes\py_dracula_light.qss" #this will load a qss file
 
         # SET THEME AND HACKS
