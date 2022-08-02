@@ -266,14 +266,13 @@
         <file>Logos/Images/IITR-logo.png</file>
     </qresource>
     <qresource prefix="/UsedIcons">
-        <file>Logos/Icons/eigen-value (Custom).png</file>
-        <file>Logos/Icons/ending (Custom).png</file>
+        <file>Logos/Icons/eigen value (Custom).png</file>
+        <file>Logos/Icons/end (Custom).png</file>
         <file>Logos/Icons/home (Custom).png</file>
-        <file>Logos/Icons/initial-condition (Custom).png</file>
-        <file>Logos/Icons/non-linear-solver-setting (Custom).png</file>
+        <file>Logos/Icons/initial condition (Custom).png</file>
+        <file>Logos/Icons/non-linear solver settings (Custom).png</file>
+        <file>Logos/Icons/time dependent settings (Custom).png</file>
         <file>Logos/Icons/solver-type (Custom).png</file>
-        <file>Logos/Icons/time-dependent settings (Custom).png</file>
-        <file>Logos/Icons/icons8-lambda-16.png</file>
-        <file>Logos/Icons/icons8-lambda-48 (Custom).png</file>
+        <file>Logos/Icons/solver-type 2.png</file>
     </qresource>
 </RCC>
