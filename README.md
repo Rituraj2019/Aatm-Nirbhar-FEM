@@ -1,5 +1,5 @@
 # IITR_CMLab
-Project of Summer Internship'22 | CMLab, IIT Roorkee
+Project of Summer Internship 2022 | CMLab, IIT Roorkee
 ## Files
 **main.py**: This is a python file to run our application/GUI. This file runs using different modules made in @modules file
 

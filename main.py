@@ -89,12 +89,12 @@ class MainWindow(QMainWindow):
         # ///////////////////////////////////////////////////////////////
         self.show()
 
-        # SET CUSTOM THEME
+        #  TO SET CUSTOM THEME
         # ///////////////////////////////////////////////////////////////
         useCustomTheme = True #change it to true to get the theme loaded in next line
         themeFile = "themes\py_dracula_light.qss" #this will load a qss file
 
-        # SET THEME AND HACKS
+        #  TO SET THEME AND HACKS
         if useCustomTheme:
             # LOAD AND APPLY STYLE
             UIFunctions.theme(self, themeFile, True)
